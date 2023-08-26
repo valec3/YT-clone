@@ -3,11 +3,8 @@ import { Stack, easing } from '@mui/material'
 import {categories} from '../utils/constants'
 
 
-const Sidebar = () => {
-    const [selectedCategory,setSelectedCategory] = useState(categories[0].name);
-    const handlerClick = (i) => {
-        console.log(i)
-    }
+const Sidebar = ({selectedCategory,setSelectedCategory}) => {
+
     return (
         <Stack 
             direction={"row"}
@@ -21,7 +18,7 @@ const Sidebar = () => {
                         style={{
                             background:category.name === selectedCategory && "#fc1503",color:"#fff",gap:"10px"
                         }}
-                        onClick={()=>{handlerClick(this.name)}}
+                        onClick={()=>setSelectedCategory(category.name)}
                     >
                         <span
                             style={{color:category.name === selectedCategory ? "#fff":"red"}}
