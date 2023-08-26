@@ -9,7 +9,7 @@ a {
   text-decoration: none;
   color: black;
 }
-
+/* Barra scroll */
 ::-webkit-scrollbar {
   width: 0px;
   height: 5px;
@@ -29,6 +29,8 @@ a {
   background-color: #FC1503 !important;
   color: white !important;
 }
+
+/* Buttons styles */
 
 .category-btn:hover span{
   color: white !important;
