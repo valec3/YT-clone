@@ -19,7 +19,7 @@ const SearchBar = () => {
         <Paper
             onSubmit={handlerSubmit}
             component="form"
-            sx={{ borderRadius:"20px", border:"1px solid #e3e3e3",paddingLeft:"2px",boxShadow:"none",mr:{sm:5}}}
+            sx={{ borderRadius:"20px", border:"1px solid #e3e3e3",px:2,boxShadow:"none",mr:{sm:5}}}
         >
             <input 
                 type="text" 
